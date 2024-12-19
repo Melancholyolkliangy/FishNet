@@ -1,0 +1,2454 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1726182683, guid: a4865f1ab4504ed8a368670db22f409c, type: 3}
+  m_Name: AOTGenerationConfig
+  m_EditorClassIdentifier: 
+  automateBeforeBuilds: 0
+  deleteDllAfterBuilds: 0
+  AutomateForAllAOTPlatforms: 1
+  automateForPlatforms: 090000000d00000005000000
+  lastScan: 638453189973005654
+  supportSerializedTypes:
+  - TypeName: ACT.Battle.Configs.ConfigTrajectoryObject, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.GroundLightDieParaStruct, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int32[,], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Battle.Configs.GroundLightDieParaStruct,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Battle.MapLayerAreaData, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.MapLayerAreaData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AbilityAuth, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AbilityConst, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.AbilityEntityType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AbilityLayers, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ABProperty, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ABProperty[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AccLifeTimeModifier, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.RichText.ACTCustomTagConfig+CustomTag, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Core.ActGraphSetting+AntialiasingType, ACT.Core
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Core.ActGraphSetting+LightQuality, ACT.Core
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Core.ActGraphSetting+SettingConfig, ACT.Core
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Core.ActGraphSetting+TextureQuality, ACT.Core
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionActiveBodyPart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionActivePosture, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionActivePostureBurst, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionAddCharacterEnergy, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionAddCharacterEnergy+FloatType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionAddSkillModifier, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionAdvancedFindTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionAttachEffect, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionBindAssetReference, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionBindTrackEntity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionBindTrajectory, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionCamera, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionCameraFOV, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionCameraNoise, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionCarry, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangeAirAttackCount, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangeBehaviorTreeValue, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangeDodgeInAirCount, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangeGlobalSpeed, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangeParameter, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangePhysics, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangeRenderLayerMask, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangeSkillCd, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangeState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionChangeWrapPosAndRot, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionCheckTrajectoryVelocity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionClearFallingAccumulateSpeed, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionConsumeEnergy, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionConsumeSkill, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionControlDissolve, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionControlEffect, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionControlGhostShadow, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionControlSkinrenderers, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionCreateAbilityEntity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionCreateDanmakuEntity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionCreateDynamicVar, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionCreatFlexibleEntity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionDelay, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionDestoryAbilityEntity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionDoAbilityCaster, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionDoOnAbilityOwner, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.ActionDynamicVarTriggerAbility, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.ActionDynamicVarTriggerAbility+TriggerType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionEnterCoolDown, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionFindTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionFireEffect, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionFlashCasterToPosition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionFlashToPosition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionFrameHalt, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionGetHatred, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionHit, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionHitSounds, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionLetterBoxing, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionLetterBoxing+LetterType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionLog, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionLookAtTarget, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionModifyAbilityTime, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionModifyDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionModifyDynamicVar, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionModifyElementDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionModifyEnergyCharge, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionModifyHitEndureLevel, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionOrder, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionPlayLoopSound, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionPostureDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionRecoverHp, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionrefreshEffectInPool, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionReleaseEffect, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionRemoveLoopSoundState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionRemovePlayerTag, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionRemoveSkillModifier, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionRetarget, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionRetargetCaster, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionRetargetOwner, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSendBehavourTreeEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSetAimTarget, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSetEntityActive, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSetHP, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSetJumpCount, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSetModelActive, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSetPlayerTag, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSetTenacity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionShowTrajectoryEffect, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSkillButtonStateChange, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSkillButtonStateChange+CustomUIChangeAction,
+      Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionSound, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionTargetCompensation, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionTimeline, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionTriggerAbility, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionTriggerDissolve, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionTriggerFunnelLook, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionTriggerFunnelLook+TriggerMode, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionTurnAround, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionUIChange, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionUIChange+IconType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionUltraEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionVolume, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionZeroDamageableDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ActionZeroThisDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.AiDictionary, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.AiDictionary[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Alliance, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AllianceCondition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AndPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.AnimationCurve, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Animator, UnityEngine.AnimationModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.AniPart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.AniPart[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.AniPartControl+PartType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.AnomalyDeBuff, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.AnomalyType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AreaAttackPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.AddressableAssets.AssetReference, Unity.Addressables
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.AddressableAssets.AssetReferenceT`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule]], Unity.Addressables
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AttackPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AttackPattern[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AttackSkillPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.AttackTypeTag, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.BaseCondition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.BaseEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.BaseEvent[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.BaseFindTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.BaseFindTargets[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.BaseFindTargetsByArea, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Boolean, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Boolean[], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Bounds, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.BoxCollider, UnityEngine.PhysicsModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.BreakType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.BreakType[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.BreakTypePredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.BTreeValeType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Byte, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CameraFOVItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CameraItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CameraNoiseItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Behave.CamMovementBehaveData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.CamMovementData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Char[], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.CharacterCustomUI+SkillButtonType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.CharacterInfo[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.ChatData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAbilityAddPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAbilityCooldown, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAbilityEntityTypeIs, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAbilityOnAdd, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAbilityPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAbilityStack, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAirAttackCount, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAllianceIs, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAttackeeValuePredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAttackerIsCritical, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckAttackType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckBodyPartPriority, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckCanBeAttack, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckCharacterDamageType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckCurrStateChange, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckDamageValue, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckDynamicPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckDynamicValueChangeValuePredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckElement, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckEntityVolume, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckHasHitTag, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckHitDirectionPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckHitEntityFaceDir, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckHitEntityTypeIsCharacter, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckInWeak, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckIsDynamicValuePredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckLaserIsReCall, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckLookAtPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckOwnerTargetCollisionPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckOwnerTargetDistance, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckOwnerTypeIs, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckParameter, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.CheckPointData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckPostureBurst, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckPropertyPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckStateObjectAbilityPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckStateObjectStatePredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckTarget, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckTargetEntityTypeIs, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckTeamElement, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckTenacityValue, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CheckValue, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Cinemachine.CinemachinePath, Cinemachine
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Cinemachine.CinemachinePath+Waypoint, Cinemachine
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Cinemachine.CinemachinePath+Waypoint[], Cinemachine
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Cinemachine.CinemachineVirtualCamera, Cinemachine
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CircleDistributionPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.ClawColliderPoint, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.ClawData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MS.Internal.Xml.XPath.ClonableStack`1[[ACT.Drama.Conversation.ChatData,
+      Assembly-ACT]], System.Xml
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MS.Internal.Xml.XPath.ClonableStack`1[[ACT.EventTrack.EventTrackConfig,
+      Assembly-ACT]], System.Xml
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.CloseUIEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CMFollowTargetAppendVelocity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CMFollowTargetAppendVelocity+DirMode, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.CollectionPointData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Collider, UnityEngine.PhysicsModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Color, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.Common, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.CompAbility+CharacterDamageType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CompareMode, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CompensationPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CompensationPattern[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ComplexFoundTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CompositeMovementPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CompressCompensationPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Condition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionAbyssFail, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionAbyssStart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionAbyssWin, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionBuffExist, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionChipGet, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionDramaOptionChoose, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionDramaReadBook, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionDramaStateChanged, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionDramaStateChanged+DramaState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionDungeonFail, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionDungeonStart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionDungeonWin, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionEntityHited, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionGameStateChanged, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionGameStateChanged+GameState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionInteract, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionInteractStateChange, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionItemCost, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionItemGet, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionMissionChanged, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionMissionChanged+StateType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionMonsterDie, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionMonsterExist, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionOnBuffAdd, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionOnBuffRemove, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionOnChasingEnd, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionOnMonsterHatred, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionPlayerExpChange, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionPlayerLevelUp, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionPlayerLevelUp+LevelType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionPlayerUseSkill, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionRoleBreak, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionRoleDie, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionRoleLevelUp, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionSkillLevelUp, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionSubmissionChanged, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionWeaponBreakUp, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionWeaponCost, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionWeaponGet, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionWeaponLevelUp, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.ConditionWeaponStartUp, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigAbility, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigAbility[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigAction, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigAction[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigAnimParameterType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigColor, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigCompensation, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigCompositeMove, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindAimEntity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindOwner, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindProductByOwner, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindRangeTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindRayCastRangeTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindRayCastTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindRectInRectTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindSelf, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindTeamEntity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindTrajectoryTrackEntity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFindWeaponAreaTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFunction`1[[UnityEngine.Bounds, UnityEngine.CoreModule]],
+      Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFunction`1[[System.Single, mscorlib]], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFunction`1[[System.Int32, mscorlib]], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFunction`1[[UnityEngine.Quaternion, UnityEngine.CoreModule]],
+      Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFunction`1[[UnityEngine.Vector3, UnityEngine.CoreModule]],
+      Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigFunction`1[[UnityEngine.Vector3, UnityEngine.CoreModule,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigHitParameter, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixin, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixin[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinAbilityLifetime, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinAim, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinAnomaly, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinAuraField, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinChangeMotionSpeed, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinConditionDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinContinueEffect, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinCreateRandomPositions, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinCustomUI, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinDamageCD, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinDelayTime, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinDodge, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinElevatorRecall, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinFindTargetTrigger, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinFollowTarget, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinFollowTarget+FollowMode, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinFunnelLookControl, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinGetCurrentAttacker, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinGravity, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinHatred, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinHPAction, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinIntervalDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinIntervalDoAction, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinListenChangeCharacter, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinListenEvt, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinLockHP, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinLockHP+Phase, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinLockHP+Phase[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinMovementRestrict, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinPush, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinReCall, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinRestrict, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinSetSwitchSkillPos, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMixinUnilateral, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigMotionPhysics, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.ConfigParticle, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigPredicate[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigTrajectory, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigTriggerAbility, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConfigTriggerAbility[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.ConfigWorldPartitionNode, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.ConstFloat, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ConstFloat, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.ConversationData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.ConversationEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.ConversationEvent[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CoordinateSystem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.CurveMovementPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.DamageFormula, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.DarkCoreStoneData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.DecodeRayCompData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Behave.DecodeRayReceiverBehaveEvent+RayChangeRule, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Behave.DecodeRayReceiverBehaveEvent+ReflectRule, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Behave.DecodeRayReceiverBehaveEvent+RefractRule, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.AbilityEntityType,
+      Assembly-ACT],[System.Int32, mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.AniPartControl+PartType,
+      Assembly-ACT],[ACT.Battle.AniPart[], Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.AnomalyType, Assembly-ACT],[ACT.UI.AnomalyDeBuff,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.AnomalyType, Assembly-ACT],[System.String,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Core.Element, ACT.Core],[System.Single,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[ACT.Battle.Configs.ConfigAction[],
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[System.Int32,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[System.Collections.Generic.List`1[[System.Int32,
+      mscorlib]], mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[System.Collections.Generic.List`1[[ACT.Battle.Configs.MissionPointData,
+      Assembly-ACT]], mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[System.Collections.Generic.List`1[[ACT.World.SubWorldLinker,
+      Assembly-ACT]], mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[ACT.Game.Data.MapCustomFlag,
+      ACT.Core]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[ACT.World.Asset.NPCPointData,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[ACT.World.Asset.StateWorldAssetData,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.Configs.MonsterAttackType,
+      Assembly-ACT],[ACT.Battle.Configs.Common, Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.ParticleConfig,
+      Assembly-ACT],[ACT.Battle.Configs.ConfigColor, Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.ParticleConfig,
+      Assembly-ACT],[ACT.Battle.ConfigParticle, Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.ParticleSubConfig,
+      Assembly-ACT],[ACT.Battle.SubConfigParticle, Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[ACT.EventTrack.EventTrackData,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.TextMessage, Assembly-ACT],[UnityEngine.Color,
+      UnityEngine.CoreModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[ACT.Battle.TextMessage, Assembly-ACT],[System.Int32,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[VarName, Assembly-ACT],[System.Int32,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.DimensionMode, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.DissolvePart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.DissolvePartNew, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.DistanceComparer, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.DitherPart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.DoPeriodicAction, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.DurationType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.DynamicFloat, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Timeline.DynamicTimeline, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.DynamicValueChanged, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.EdgLightPart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.EffectDataType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.EffectItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.EffectModelType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.EffectPoint, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.EffectPoint+EffectPointType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.EffectPoint+RayHitPointType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.EffectRangeEnum, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Core.Element, ACT.Core
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Core.ElementBitmask, ACT.Core
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.ElevatorData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.ElevatorInfo, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Behave.ElevBehaveCustomData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.EllipseConfigCompositeMove, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.EmotionPitch, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.EndureType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.EnemyUpdatePos, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.EnergyValueType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.EntityType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[ACT.Battle.AbilityEntityType,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[ACT.Battle.AniPartControl+PartType,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[ACT.Battle.AnomalyType,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[ACT.Core.Element,
+      ACT.Core]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[ACT.Battle.Configs.MonsterAttackType,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[ACT.Battle.ParticleConfig,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[ACT.Battle.ParticleSubConfig,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[ACT.Battle.TextMessage,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: FMODUnity.EventReference, FMODUnity
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.EventTrackCondition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.EventTrackCondition+SourceType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.EventTrackConfig, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.EventTrackData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.EventTrackPublicData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.EvtBattleChange+ChangeCharacterSource, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.FaceDir, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.FakeLightPart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Localization.Settings.FallbackBehavior, Unity.Localization
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.FilterEntityType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Nullable`1[[ACT.Battle.FilterEntityType, Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FilterFoundTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FindHatredTarget, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FixedAreaMissionPoint, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Single, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Single[], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FloatMultiply, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FlyEnemyUpdatePos, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FollowConfigCompositeMove, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionAttachPoint, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionBounds, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionBTV3, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionConstVector3, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionContextPosition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionEntityEulerAngle, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionEntityPosition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionGetHP, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionHatredPosition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionInt, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionOwnerOffesPosition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionRandomVector3InRect, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.FunctionTempV3, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.GameObject, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.GeneralHitPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.GeneralLifePattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.GeneralMovementPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.GeneralTrajectory, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.GenericEqualityComparer`1[[VarName, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetAbyssDuration, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetAbyssId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetAbyssLevel, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetAbyssName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetAllUnFinishedMissions, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBattleDuration, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBattleEntityId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBattleMonsterName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBookId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBuffDuration, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBuffEndReason, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBuffList, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBuffName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBuffRoleId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBuffSkillId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetBuffStack, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetChipDetailInfo, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetCodeVersion, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Core.GetCoefficientType, ACT.Core
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetConversationChoice, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetConversationDuration, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetConversationId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetCreateData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetDungeonDuration, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetDungeonId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetDungeonName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetHitDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.GetHPMode, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetInteractId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetInteractObjectName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetInteractState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetInteractWorldId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetIsChasingSuccess, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetIsFirstLogin, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetItemChangeNum, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetItemChangeReason, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetItemId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetItemNum, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetItemQuality, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetLogoutType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetMissionDuration, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetMissionId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetMissionType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetMonsterPointId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetOnlineLifeTime, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetOnlineLifeTime+TimeSpanType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetPlayerExpChangeNum, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetPlayerExpChangeReason, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetPlayerInfo, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetPlayerInfo+PlayerInfoType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetPostureDamage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetRoleBreakNum, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetRoleId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetRoleLevelUpAfter, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetRoleLevelUpReason, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetRoleName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetSkillCasterId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetSkillId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetSkillLevel, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetSkillName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetSKillStateName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetSubmissionDuration, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetSubmissionId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetSystemTime, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetTeamInfo, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetWeaponBreak, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetWeaponId, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetWeaponLevelAfter, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetWeaponLevelBefore, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetWeaponName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.EventTrack.GetWeaponStartUpLevel, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.GlitchPart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.GravityModifier, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.GroundDistanceCompare, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: FMOD.GUID, FMODUnity
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Config.HitControl, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.HitDirection, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.HitExpressive, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: EasyCharacterMovement.HitLocation, EasyCharacterMovement.CharacterMovement
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.HitLocationPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.HitTag, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.HitType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.HorizontalInfo, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.IDynamicFloat, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[ACT.Battle.AbilityEntityType,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[ACT.Battle.AniPartControl+PartType,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[ACT.Battle.AnomalyType,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[ACT.Core.Element, ACT.Core]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[System.Int32, mscorlib]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[ACT.Battle.Configs.MonsterAttackType,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[ACT.Battle.ParticleConfig,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[ACT.Battle.ParticleSubConfig,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[System.String, mscorlib]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[ACT.Battle.TextMessage,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[VarName, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.IInteractEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.IInteractVerification, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int32, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int32[], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int32[][], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.InteractCoreData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.InteractEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.InteractEventBaker, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.InteractMissionPoint, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.InteractObjectData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.InteractRule, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.InteractRuleState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.InteractState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.InteractStateCondition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.InteractStateEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.InteractVerificationBaker, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.IServiceAction, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Keyframe, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Keyframe[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.KeyPointCondition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.KeyPointState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.LaserData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.LayerMask, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.LightHouseData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.LightHouseInteracts, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Rendering.Universal.LightLayerEnum, Unity.RenderPipelines.Universal.Runtime
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.LightWallData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.LinkagesObjects, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.RichText.ACTCustomTagConfig+CustomTag,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Battle.Configs.ActionSkillButtonStateChange+CustomUIChangeAction,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Drama.BaseCondition, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Drama.BaseEvent, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Drama.Conversation.ChatData,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.ConfigWorldPartitionNode,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.ElevatorInfo, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.EventTrack.EventTrackCondition,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.EventTrack.EventTrackConfig,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.EventTrack.EventTrackPublicData,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[System.Single, mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.UI.HorizontalInfo, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.InteractRule, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.InteractRuleState,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Drama.InteractState, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Drama.KeyPointState, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.LightHouseInteracts,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.LinkagesObjects,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.Int32,
+      mscorlib]], mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Battle.Configs.MissionPointData,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.MonoDataRef`2[[ACT.World.Asset.InteractVerificationBaker,
+      Assembly-ACT],[ACT.World.Asset.IInteractVerification, Assembly-ACT]], Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.MonoDataRef`2[[ACT.World.Asset.ServiceActionBaker,
+      Assembly-ACT],[ACT.World.Asset.IServiceAction, Assembly-ACT]], Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Net.NetDebugConfig+SwitchInfo,
+      ACT.Net]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.NPCStateInfo, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.StandardElevatorLayer,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.StateSwapGroup,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.StateWorldAssetData,
+      Assembly-ACT]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.StateWorldUid, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.Asset.StoneStopInfo, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.World.SubWorldLinker, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Battle.TriggerActionBase, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.Battle.TriggerObjectEntry, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[UnityEngine.Localization.SmartFormat.PersistentVariables.VariableNameValuePair,
+      Unity.Localization]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ACT.UI.VerticalInfo, Assembly-ACT]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ListenEvtItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ListenEvtItem[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ListenEvtType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Localization.LocalizedString, Unity.Localization
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int64, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.LookupStateData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Game.Data.MapCustomFlag, ACT.Core
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.MechanismTrapData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.MissionCondition, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.MissionPointData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ModelActiveItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ModifyDamageType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ModifyType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.MonoDataRef`2[[ACT.World.Asset.InteractEventBaker,
+      Assembly-ACT],[ACT.World.Asset.IInteractEvent, Assembly-ACT]], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.MonoDataRef`2[[ACT.World.Asset.InteractVerificationBaker,
+      Assembly-ACT],[ACT.World.Asset.IInteractVerification, Assembly-ACT]], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.MonoDataRef`2[[ACT.World.Asset.ServiceActionBaker,
+      Assembly-ACT],[ACT.World.Asset.IServiceAction, Assembly-ACT]], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.MonoECS+PlayerTag, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.MonsterAttackType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.MonsterPointData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.MonsterWeigtType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.MotionInputKey, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.MotionInputKey[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.MotionState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.MotionState[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.MotionStatePredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.MovableTrapData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Net.NetCommand, ACT.Net
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Net.NetDebugConfig+SwitchInfo, ACT.Net
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.NPCBehaviourTree, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.NPCMissionPoint, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.NPCPointData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.NPCStateInfo, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Object, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.OnCustomInteract, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.OnStateChange, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Operate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Operator, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.OrPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.OutlinePart, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.OwnerPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ParabolaMovementPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ParamSource, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.ParticleConfig, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.ParticleSubConfig, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.PerformanceItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.PerformanceItem[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.PhysicsOverride, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.PhysicsOverride[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Utility.PlayState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.Pos, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.Pos[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.PostureDmgType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.PredicateAction, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Core.PropertySub, ACT.Core
+    IsCustom: 0
+    Emit: 1
+  - TypeName: PushDirection, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.PushImpetusData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Quaternion, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Quaternion[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.RaidEnterData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.RaidRewardPointData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.RandomPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.ReadObjectData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.ReadObjectData+ReadType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.RecallPoint, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.ReceiveMissionEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.RedDotTrieNode, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Renderer, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Renderer[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ReTargetAttackee, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ReTargetAttacker, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ReTargetType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.RotateCompData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.RotateConfigCompositeMove, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.Route, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.RoutePoint, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.RoutePoint[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ScrapingCompensationPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.SendKeyPointEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.ServiceActionBaker, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.SetLoopSoundStateItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.SetStateData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Shape, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.SkillModifier, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.SkillModifier[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.SkinnedMeshRenderer, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.SkinnedMeshRenderer[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.SortAndTakeFoundTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.SoundItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.SpeedLifeTimeModifier, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.SpeedModifier, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Sprite, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StandardElevatorData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StandardElevatorLayer, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.StateButton+StateButtonState, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StateCheck, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StateFlagData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StateRoute, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StateRoute[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StateSwapGroup, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StateWorldAssetComp, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StateWorldAssetData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StateWorldUid, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.StoneStopInfo, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.String, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.String[], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.SubConfigParticle, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.SubWorldLinker, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.SwapStateData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.SwitchMotionPathData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.SwitchMotionPathData+SwitchPoint, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.SwitchMotionPathData+SwitchPoint+CamProperties, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.SymbolsData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.SystemTime+ConfigChangeGlobalSpeed, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Localization.Tables.TableEntryReference, Unity.Localization
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Localization.Tables.TableReference, Unity.Localization
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TargetBounds, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TargetResultComparer, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.TextChanger+TextModify, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.TextChanger+TextModify[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TextMessage, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.TimelineConfig, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.TimelineConversationEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TimeScale, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: TMPro.TMP_Text, Unity.TextMeshPro
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.ToFixedPosMovementPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TrackTargetMovementPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TrajectoryHitPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TrajectoryLifePattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TrajectoryMovementPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.TransferData, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Transform, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Transform[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TransformConfigCompositeMove, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Asset.TransformParent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TransformsPattern, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerActionBase, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerActionBase[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerActionOnce, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerActionPlayAnimation, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerActionPlayAnimation+ParameterType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerActionPlayEffect, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerActionRotateTo, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerActionRotateTo+Direction, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerObjectEntry, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerObjectFilter, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.World.Actions.TriggerSendRobotBtreeEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.TriggerType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.TriggerType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Type, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.UI_TYPE, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.Conversation.UIEvent, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.UInt32, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.UseCurve, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Localization.SmartFormat.PersistentVariables.VariableNameValuePair,
+      Unity.Localization
+    IsCustom: 0
+    Emit: 1
+  - TypeName: VarName, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Vector2, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Vector3, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.VelocityModifier, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.VelocityModifier[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.VerticalInfo, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.UI.VerticalInfo+Type, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.VolumeLayerItem, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.VolumeLayerItem[], Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.WeaponType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.WhereTargets, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Battle.Configs.WhereTargetsPredicate, Assembly-ACT
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.WrapMode, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ACT.Drama.XNodeInteractType, Assembly-ACT
+    IsCustom: 0
+    Emit: 1

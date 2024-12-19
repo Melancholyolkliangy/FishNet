@@ -1,0 +1,165 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#include "../Shaders/noiseSimplex.cginc"
+#pragma kernel CSMain
+#pragma kernel SolidRed
+#pragma kernel SplitScreen
+#pragma kernel Circle
+#pragma kernel Circles
+#pragma kernel Clear
+#pragma kernel Noise
+#pragma kernel NormalizeVertex
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+shared RWTexture2D<float4> Result;
+int texResolution;
+float4 clearColor;
+float4 circleColor;
+float time;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+
+    Result[id.xy] = float4(id.x & id.y, (id.x & 15)/15.0, (id.y & 15)/15.0, 0.0);
+}
+[numthreads(8,8,1)]
+void SolidRed (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+
+    Result[id.xy] = float4(1,0,0, 0.0);
+}
+[numthreads(8,8,1)]
+void SplitScreen (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+    int halfRes = texResolution >> 1;
+    Result[id.xy] = float4(step(halfRes,id.x),step(halfRes,id.y),0,0.0);
+}
+//绘制圆形
+float inCircle(float2 pt,float radius)
+{
+    return (length(pt)<radius) ? 1.0 : 0.0;
+}
+
+[numthreads(8,8,1)]
+void Circle (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+    int halfRes = texResolution >> 1;
+    int isInside = inCircle(((int2)id.xy-halfRes),texResolution >> 2);
+    Result[id.xy] = float4(0,isInside,0,0);
+}
+//Circles
+struct circle
+{
+    float2 origin;
+    float2 velocity;
+    float radius;
+};
+
+StructuredBuffer<circle> circlesBuffer;
+RWStructuredBuffer<float3> resultBuffer;
+/*Returns pseudo random number in range 0 <= x < 1 */
+float random(float value, float seed = 0.546){
+    float random = (frac(sin(value + seed) * 143758.5453));// + 1.0)/2.0;
+    return random;
+}
+ 
+float2 random2(float value){
+    return float2(
+        random(value, 3.9812),
+        random(value, 7.1536)
+    );
+}
+ 
+void plot1( int x, int y, int2 centre){
+    Result[uint2(centre.x + x, centre.y + y)] = circleColor;
+}
+ 
+void plot8( int x, int y, int2 centre ) {
+    plot1(  x,  y, centre );  plot1(  y,  x, centre );
+    plot1(  x, -y, centre );  plot1(  y, -x, centre );
+    plot1( -x, -y, centre );  plot1( -y, -x, centre );
+    plot1( -x,  y, centre );  plot1( -y,  x, centre );
+}
+ 
+void drawCircle( int2 centre, int radius){
+    int x = 0;
+    int y = radius;
+    int d = 1 - radius;
+ 
+    while (x < y){
+        if (d < 0){
+            d += 2 * x + 3;
+        }else{
+            d += 2 * (x - y) + 5;
+            y--;
+        }
+ 
+        plot8(x, y, centre);
+ 
+        x++;
+    }
+}
+ 
+[numthreads(32,1,1)]
+void Circles (uint3 id : SV_DispatchThreadID)
+{
+    int2 centre = (int2)(circlesBuffer[id.x].origin + circlesBuffer[id.x].velocity * time);
+    while (centre.x>texResolution) centre.x -= texResolution;
+    while (centre.x<0) centre.x += texResolution;
+    while (centre.y>texResolution) centre.y -= texResolution;
+    while (centre.y<0) centre.y += texResolution;
+    int radius = (int)circlesBuffer[id.x].radius;
+    
+    drawCircle( centre, radius );
+
+    resultBuffer[id.x] = float3(centre.x, centre.y, 0.0 ); ;
+}
+ 
+[numthreads(8,8,1)]
+void Clear (uint3 id : SV_DispatchThreadID)
+{
+    Result[id.xy] = clearColor;
+}
+
+//Noise
+float noiseScale;
+float ringScale;
+[numthreads(8,8,1)]
+void Noise(uint3 id : SV_DispatchThreadID)
+{
+    float3 pos = (((float3)id)/(float)texResolution) * 2.0;
+    float n = snoise(pos);
+    float ring = frac(1 * n);
+    float delta = pow(ring, 1) + n;
+
+    Result[id.xy] = lerp(circleColor, clearColor, delta);
+}
+//Transform
+struct Vertex
+{
+    float3 pos;
+    float3 normal;
+};
+RWStructuredBuffer<Vertex>  vertexBuffer;
+StructuredBuffer<Vertex>  initialBuffer;
+float radius;
+float delta;
+[numthreads(8,1,1)]
+void NormalizeVertex(uint3 id : SV_DispatchThreadID)
+{
+    float3 initPosition = initialBuffer[id.x].pos;
+    float3 initNormal = initialBuffer[id.x].normal;
+
+    float3 s = float3(normalize(initPosition)*radius); 
+    float3 pos = lerp(initPosition, s, delta);
+
+    float3 snormal = normalize(initPosition);
+    float3 norm = lerp(initNormal, snormal, delta);
+    vertexBuffer[id.x].pos = pos;
+    vertexBuffer[id.x].normal = norm;
+}
