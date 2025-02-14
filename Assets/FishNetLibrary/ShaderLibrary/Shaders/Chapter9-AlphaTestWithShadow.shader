@@ -1,0 +1,77 @@
+// Upgrade NOTE: replaced 'defined USING_DIRECTIONAL_LIGHT' with 'defined (USING_DIRECTIONAL_LIGHT)'
+
+Shader "Unity Shaders Book/Chapter9-AlphaTestWithShadow"
+{
+    Properties
+    {
+        _Color("Main Tint",Color) = (1,1,1,1)
+        _MainTex("Main Tex", 2D) = "white"{}
+        _Cutoff("Alpha Cutoff",Range(0,1)) = 0.5
+    }
+    SubShader
+    {
+        Pass
+        {
+            Tags
+            {
+                "Queue"="AlphaTest"
+                "IgnoreProjector"="True"
+                "RenderType"="TransparentCutout"
+                "LightMode"="ForwardBase"
+            }
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+
+            #include "Lighting.cginc"
+            #include "AutoLight.cginc"
+
+            fixed4 _Color;
+            sampler2D _MainTex;
+            float4 _MainTex_ST;
+            fixed _Cutoff;
+
+            struct a2v
+            {
+                float4 vertex : POSITION;
+                float3 normal : NORMAL;
+                float4 texcoord : TEXCOORD0;
+            };
+
+            struct v2f
+            {
+                float4 pos : SV_POSITION;
+                float3 worldNormal : TEXCOORD0;
+                float3 worldPosition : TEXCOORD1;
+                float2 uv : TEXCOORD2;
+                SHADOW_COORDS(3)
+            };
+
+            v2f vert(a2v v)
+            {
+                v2f o;
+                o.pos = mul(unity_MatrixMVP,v.vertex);
+                o.worldPosition = mul(unity_ObjectToWorld,v.vertex);
+                o.worldNormal = UnityObjectToWorldNormal(v.normal);
+                o.uv = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+                TRANSFER_SHADOW(o);
+                return o;
+            }
+
+            fixed4 frag(v2f i) : SV_Target
+            {
+                fixed4 texColor = tex2D(_MainTex, i.uv).rgba;
+                clip(texColor.a - _Cutoff);
+                fixed3 albedo = texColor * _Color.rgba;
+                fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyzw * albedo;
+                fixed3 worldNormal = normalize(i.worldNormal);
+                fixed3 worldLight = normalize(UnityWorldSpaceLightDir(i.worldPosition));
+                fixed3 diffuse = _LightColor0 * albedo * saturate(dot(worldNormal, worldLight));
+                UNITY_LIGHT_ATTENUATION(atten,i,i.worldPosition);
+                return fixed4(ambient + diffuse * atten,1.0);
+            }
+            ENDCG
+        }
+    }
+    Fallback "Transparent/Cutout/VertexLit"
+}

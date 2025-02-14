@@ -55,7 +55,7 @@ Shader "Unity Shaders Book/Chapter6-BlinnPhoneUseBuildInFunction"
                 fixed3 viewDir = normalize(UnityWorldSpaceViewDir(i.worldPosition));
                 fixed3 h = normalize(worldLight + viewDir);
                 fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(h, worldNormal)),_Gloss);
-                fixed3 color = ambient * diffuse + specular;
+                fixed3 color = ambient + diffuse + specular;
                 return fixed4(color, 1);
             }
             ENDCG

@@ -78,7 +78,7 @@ Shader "Unity Shaders Book/Chapter7-NormalMapTangentSpace"
                 fixed3 diffuse = _LightColor0 * albedo * saturate(dot(tangentNormal, tangentLightDir));
                 fixed3 h = normalize(tangentLightDir + tangentViewDir);
                 fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(h, tangentNormal)),_Gloss);
-                fixed3 color = ambient * diffuse + specular;
+                fixed3 color = ambient + diffuse + specular;
                 return fixed4(color, 1);
             }
             ENDCG

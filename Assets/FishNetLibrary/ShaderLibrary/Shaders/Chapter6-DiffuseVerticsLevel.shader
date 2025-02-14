@@ -41,7 +41,7 @@ Shader "Unity Shaders Book/Chapter6-DiffuseVerticslLevel"
                 fixed3 worldLight = normalize(_WorldSpaceLightPos0.xyz);
                 fixed3 diffuse = _LightColor0 * _Diffuse.rgb * saturate(dot(worldNormal, worldLight));
 
-                o.color = ambient * diffuse;
+                o.color = ambient + diffuse;
                 return o;
             }
 

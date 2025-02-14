@@ -55,7 +55,7 @@ Shader "Unity Shaders Book/Chapter6-SpecularPixel"
                 fixed3 reflectDir = normalize(reflect(-worldLight,i.worldNormal));
                 fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - i.worldPosition);
                 fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(reflectDir, viewDir)),_Gloss);
-                fixed3 color = ambient * diffuse + specular;
+                fixed3 color = ambient + diffuse + specular;
                 return fixed4(color, 1);
             }
             ENDCG

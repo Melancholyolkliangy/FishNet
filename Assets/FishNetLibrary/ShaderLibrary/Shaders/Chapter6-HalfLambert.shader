@@ -46,7 +46,7 @@ Shader "Unity Shaders Book/Chapter6-HalfLambert"
                 fixed3 worldNormal = normalize(i.worldNormal);
                 fixed3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
                 fixed3 diffuse = _LightColor0.rgb * _Diffuse.rgb * 0.5 * (dot(worldNormal,lightDir) + 0.5);
-                fixed3 color = ambient * diffuse;
+                fixed3 color = ambient + diffuse;
                 return fixed4(color, 1);
             }
             ENDCG
