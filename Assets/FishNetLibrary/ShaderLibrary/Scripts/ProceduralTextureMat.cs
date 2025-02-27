@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using FancyScrollView;
+using UnityEngine;
 
 namespace FishNetLibrary.ShaderLibrary.Scripts
 {
 	[ExecuteInEditMode]
 	public class ProceduralTextureMat : MonoBehaviour
 	{
+		public Scroller scroller;
 		public Material material;
 		[SerializeField,SetProperty("textureWidth")]
 		private int m_TextureWidth;

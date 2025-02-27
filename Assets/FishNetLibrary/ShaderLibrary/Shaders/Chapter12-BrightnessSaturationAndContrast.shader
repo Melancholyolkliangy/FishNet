@@ -2,16 +2,14 @@
 
 // Upgrade NOTE: replaced 'defined USING_DIRECTIONAL_LIGHT' with 'defined (USING_DIRECTIONAL_LIGHT)'
 
-Shader"Unity Shaders Book/Chapter11-Water"
+Shader"Unity Shaders Book/Chapter12-BrightnessSaturationAndContrast"
 {
     Properties
     {
-        _MainTex("Main Tex",2D)="white"{}
-        _Color("Color Tint", Color) = (1,1,1,1)
-        _Magnitude("Distortion Magnitude",Float) = 1
-        _Frequency("Distortion Frequency",Float) = 1
-        _InvWaveLength("Distortion Inverse Wave Length", Float) = 10
-        _Speed("Speed",Float) = 0.5
+        _MainTex("Base (RGB)",2D)="white"{}
+        _Brightness("Brightness",Float) = 1
+        _Saturation("Saturation",Float) = 1
+        _Contrast("Contrast",Float) = 1
     }
     SubShader
     {
@@ -20,7 +18,6 @@ Shader"Unity Shaders Book/Chapter11-Water"
             "Queue"="Transparent"
             "IgnoreProjector"="True"
             "RenderType"="Transparent"
-            "DisableBatching"="True"
         }
         Pass
         {
@@ -28,9 +25,8 @@ Shader"Unity Shaders Book/Chapter11-Water"
             {
                 "LightMode"="ForwardBase"
             }
-            
+            ZTest Always
             ZWrite Off
-            Blend SrcAlpha OneMinusSrcAlpha
             Cull Off
             
             CGPROGRAM
@@ -42,12 +38,10 @@ Shader"Unity Shaders Book/Chapter11-Water"
             #include "AutoLight.cginc"
 
             sampler2D _MainTex;
-            fixed4 _MainTex_ST;
-            fixed4 _Color;
-            float _Magnitude;
-            float _Frequency;
-            float _InvWaveLength;
-            float _Speed;
+            half2 _MainTex_ST;
+            half _Brightness;
+            half _Saturation;
+            half _Contrast;
 
             struct a2v
             {
@@ -65,21 +59,23 @@ Shader"Unity Shaders Book/Chapter11-Water"
             v2f vert(a2v v)
             {
                 v2f o;
-                float4 offset;
-                offset.yzw = float3(0,0,0);
-                offset.x = sin(_Frequency * _Time.y + v.vertex.x * _InvWaveLength + v.vertex.y * _InvWaveLength + v.vertex.z * _InvWaveLength) * _Magnitude;
-                o.pos = UnityObjectToClipPos(v.vertex + offset);
-
-                o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
-                o.uv += float2(0, _Time.y * _Speed);
+                o.pos = mul(unity_MatrixMVP,v.vertex);
+                o.uv = v.texcoord;
                 return o;
             }
 
             fixed4 frag(v2f i) : SV_Target
             {
-                fixed4 c = tex2D(_MainTex, i.uv);
-                c.rbga *= _Color.rgba;
-                return c;
+                fixed4 renderTex = tex2D(_MainTex, i.uv);
+                renderTex.rbga *= renderTex.rgba * _Brightness;
+
+                fixed luminance = 0.125 * renderTex.r + 0.7154 * renderTex.g + 0.0721 * renderTex.b;
+                fixed3 luminanceColor = fixed3(luminance,luminance,luminance);
+                renderTex.rgb = lerp(luminanceColor,renderTex.rgba, _Saturation);
+
+                fixed3 avgColor = fixed3(0.5,0.5,0.5);
+                renderTex.rgb = lerp(avgColor,renderTex.rgba,_Contrast);
+                return fixed4(renderTex.rgb, renderTex.a);
             }
             ENDCG
         }
